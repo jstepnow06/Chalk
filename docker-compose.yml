@@ -5,9 +5,9 @@ services:
       - "3000:3000"
     environment:
       PORT: "3000"
-      DATABASE_PATH: /data/chalk.db
+      DATABASE_PATH: /app/data/chalk.db
     volumes:
-      - chalk-data:/data
+      - chalk-data:/app/data
     restart: unless-stopped
 
 volumes:
